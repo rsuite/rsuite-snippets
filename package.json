@@ -1,0 +1,60 @@
+{
+  "name": "rsuite-snippets",
+  "version": "0.0.4",
+  "author": "simonguo <simonguo.2009@gmail.com>",
+  "license": "MIT",
+  "displayName": "RSuite Snippets",
+  "description": "RSuite Snippets for VS Code",
+  "icon": "images/logo.png",
+  "homepage": "https://github.com/rsuite/rsuite-snippets/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rsuite/rsuite-snippets.git"
+  },
+  "publisher": "simonguo",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "galleryBanner": {
+    "color": "#E6E0EA",
+    "theme": "light"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [{
+        "language": "html",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "handlebars",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "razor",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "tpl",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,223 @@
+{
+	"Default Button": {
+		"prefix": "rsb",
+		"body": [
+			"<Button shape=\"default\">$1</Button>",
+			""
+		]
+	},
+	"Primary Button": {
+		"prefix": "rsbp",
+		"body": [
+			"<Button shape=\"primary\"></Button>",
+			""
+		]
+	},
+	"IconFont": {
+		"prefix": "rsif",
+		"body": [
+			"<IconFont icon=\"$1\" />",
+			""
+		]
+	},
+	"ButtonGroup": {
+		"prefix": "rsbg",
+		"body": [
+			"<ButtonGroup>\r",
+			"    <Button shape=\"default\">$1</Button>\r",
+			"    <Button shape=\"primary\">$2</Button>\r",
+			"</ButtonGroup>\r",
+			""
+
+		]
+	},
+	"Dropdown": {
+		"prefix": "rsdd",
+		"body": [
+			"<Dropdown shape=\"default\" activeKey=\"2\" select>\r",
+			"    <Dropdown.Item eventKey=\"0\">$1</Dropdown.Item>\r",
+			"    <Dropdown.Item eventKey=\"1\">$2</Dropdown.Item>\r",
+			"    <Dropdown.Item eventKey=\"2\">$3</Dropdown.Item>\r",
+			"</Dropdown>\r",
+			""
+
+		]
+	},
+	"Tooltip": {
+		"prefix": "rstt",
+		"body": [
+			"<Whisper placement=\"top\" trigger=\"hover\" speaker={\r",
+			"	<Tooltip>\r",
+			"		This is a help <i>tooltip</i> .\r",
+			"	</Tooltip>\r",
+			"}>",
+			"	<Button shape=\"default\" >Click</Button>\r",
+			"</Whisper>\r",
+			""
+		]
+	},
+	"Popover": {
+		"prefix": "rsp",
+		"body": [
+			"<Whisper placement=\"top\" trigger=\"hover\" speaker={\r",
+			"	<Popover>\r",
+			"		This is a help <i>tooltip</i> .\r",
+			"	</Popover>\r",
+			"}>",
+			"	<Button shape=\"default\" >Click</Button>\r",
+			"</Whisper>\r",
+			""
+		]
+	},
+	"Nav": {
+		"prefix": "rsnav",
+		"body": [
+			"<Nav>\r",
+			"	<Nav.Item active>$1</Nav.Item>\r",
+			"	<Nav.Item>$2</Nav.Item>\r",
+			"	<Nav.Item>$3</Nav.Item>\r",
+			"	<Nav.Item disabled>$4</Nav.Item>\r",
+			"</Nav>\r",
+			""
+		]
+	},
+	"NavBar": {
+		"prefix": "rsnavbar",
+		"body": [
+			"<Navbar >\r",
+			"	<Navbar.Header>\r",
+			"		<Navbar.Brand>\r",
+			"			<Anchor href=\"#\">Suite</Anchor>\r",
+			"		</Navbar.Brand>\r",
+			"	</Navbar.Header>\r",
+			"	<Navbar.Collapse>\r",
+			"		<Nav>\r",
+			"			<Nav.Item active>Item A</Nav.Item>\r",
+			"			<Nav.Item>Item B</Nav.Item>\r",
+			"			<Nav.Item>Item C</Nav.Item>\r",
+			"			<Nav.Item disabled>Item D</Nav.Item>\r",
+			"			<Nav.Dropdown eventKey=\"E\" select title=\"Item E\">\r",
+			"				<Nav.Item eventKey=\"E-1\" >Item E-1</Nav.Item>\r",
+			"				<Nav.Item eventKey=\"E-2\" >Item E-2</Nav.Item>\r",
+			"				<Nav.Item eventKey=\"E-3\" >Item E-3</Nav.Item>\r",
+			"				<Nav.Item eventKey=\"E-4\" >Item E-4</Nav.Item>\r",				
+			"			</Nav.Dropdown>\r",
+			"		</Nav>\r",
+			"		<Nav pullRight>\r",
+			"			<Nav.Item eventKey={1} href=\"#\">Link Right</Nav.Item>\r",
+			"			<Nav.Item eventKey={2} href=\"#\">Link Right</Nav.Item>\r",
+			"		</Nav>\r",
+			"	</Navbar.Collapse>\r",
+			"</Navbar>\r",
+			""
+		]
+	},
+	"Breadcrumb": {
+		"prefix": "rsbc",
+		"body": [
+			"<Breadcrumb>\r",
+			"	<Breadcrumb.Item href=\"#\">\r",
+			"		Home\r",
+			"	</Breadcrumb.Item>\r",
+			"	<Breadcrumb.Item href=\"#\">\r",
+			"		Library\r",
+			"	</Breadcrumb.Item>\r",
+			"	<Breadcrumb.Item active>\r",
+			"		Data\r",
+			"	</Breadcrumb.Item>\r",
+			"</Breadcrumb>\r",
+			""
+		]
+	},
+	"Pagination": {
+		"prefix": "rspt",
+		"body": [
+			"<Pagination\r",
+			"	pages={10}\r",
+			"	activePage={1}\r",
+			"	onSelect={$1} />\r",
+			""
+		]
+	},
+	"Modal": {
+		"prefix": "rsm",
+		"body": [
+			"<Modal>\r",
+			"	 <Modal.Header>\r",
+			"		<Modal.Title>Modal Title</Modal.Title>\r",
+			"	</Modal.Header>\r",
+			"	<Modal.Body>$1</Modal.Body>\r",
+			"	<Modal.Footer>\r",
+			"		<Button shape=\"primary\">Confirm</Button>\r",
+			"		<Button shape=\"default\">Cancel</Button>\r",
+			"	</Modal.Footer>\r",
+			"</Modal>\r",
+			""
+		]
+	},
+	"Grid": {
+		"prefix": "rsg",
+		"body": [
+			"<Grid>\r",
+			"	<Row>\r",
+			"		<Col xs={12} md={8}>$1</Col>\r",
+			"		<Col xs={6} md={4}>$2</Col>\r",
+			"	</Row>\r",
+			"<Grid>\r",
+			""
+		]
+	},
+	"Panel": {
+		"prefix": "rspl",
+		"body": [
+			"<Panel header=\"$1\" shape=\"default\">\r",
+			"	$2\r",
+			"</Panel>\r",
+			""
+		]
+	},
+	"Table": {
+		"prefix": "rstable",
+		"body": [
+			"<Table>\r",
+			"	<thead>\r",
+			"		<tr>\r",
+			"			<th>#</th>\r",
+			"			<th>URL</th>\r",
+			"			<th>Title</th>\r",
+			"			<th>PV</th>\r",
+			"		</tr>\r",
+			"	</thead>\r",
+			"	<tbody>\r",
+			"		<tr>\r",
+			"			<td>1</td>\r",
+			"			<td>http://wwww.hypers.com/</td>\r",
+			"			<td>Hypers</td>\r",
+			"			<td>12342</td>\r",
+			"		</tr>\r",
+			"	</tbody>\r",
+			"</Table>\r",
+			""
+		]
+	},
+	"FormGroup": {
+		"prefix": "rsfg",
+		"body": [
+			"<FormGroup>\r",
+			"	<ControlLabel>Text</ControlLabel>\r",
+			"	<FormControl  type=\"text\"  />\r",
+			"	<HelpBlock>Required</HelpBlock>\r",
+			"</FormGroup>\r",
+			""
+		]
+	}
+}
+
+
+
+
+
+
+
+
+
