@@ -1,8 +1,8 @@
-[![rsuite](./images/logo.png)](https://rsuite.github.io/)
+[![rsuite](https://raw.githubusercontent.com/rsuite/rsuite-snippets/master/images/logo.png)](https://rsuitejs.com)
 
 # rsuite-snippets
 
-> RStuie Snippets for VS Code
+> React Suite Snippets for VS Code
 
 ## Install
 
@@ -10,9 +10,7 @@
 ext install rsuite-snippets
 ```
 
-[![rsuite](./images/preview.gif)](###)
-
-
+![rsuite](https://raw.githubusercontent.com/rsuite/rsuite-snippets/master/images/preview.gif)
 
 ### Available Snippets
 
