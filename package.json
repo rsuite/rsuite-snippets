@@ -23,7 +23,8 @@
     "Snippets"
   ],
   "contributes": {
-    "snippets": [{
+    "snippets": [
+      {
         "language": "html",
         "path": "./snippets/snippets.json"
       },
