@@ -1,223 +1,773 @@
 {
-	"Default Button": {
-		"prefix": "rsb",
-		"body": [
-			"<Button shape=\"default\">$1</Button>",
-			""
-		]
-	},
-	"Primary Button": {
-		"prefix": "rsbp",
-		"body": [
-			"<Button shape=\"primary\"></Button>",
-			""
-		]
-	},
-	"IconFont": {
-		"prefix": "rsif",
-		"body": [
-			"<IconFont icon=\"$1\" />",
-			""
-		]
-	},
-	"ButtonGroup": {
-		"prefix": "rsbg",
-		"body": [
-			"<ButtonGroup>\r",
-			"    <Button shape=\"default\">$1</Button>\r",
-			"    <Button shape=\"primary\">$2</Button>\r",
-			"</ButtonGroup>\r",
-			""
+  "Default Button": {
+    "prefix": "rsb",
+    "body": ["<Button appearance=\"default\">$1</Button>", ""]
+  },
+  "Primary Button": {
+    "prefix": "rsbp",
+    "body": ["<Button appearance=\"primary\">$1</Button>", ""]
+  },
+  "ButtonGroup": {
+    "prefix": "rsbg",
+    "body": [
+      "<ButtonGroup>\r",
+      "  <Button appearance=\"default\">$1</Button>\r",
+      "  <Button appearance=\"primary\">$2</Button>\r",
+      "</ButtonGroup>\r",
+      ""
+    ]
+  },
+  "ButtonToolbar": {
+    "prefix": "rsbt",
+    "body": [
+      "<ButtonToolbar>",
+      "  <Button appearance=\"default\">$1</Button>",
+      "  <Button appearance=\"primary\">$2</Button>",
+      "</ButtonToolbar>",
+      ""
+    ]
+  },
 
-		]
-	},
-	"Dropdown": {
-		"prefix": "rsdd",
-		"body": [
-			"<Dropdown shape=\"default\" activeKey=\"2\" select>\r",
-			"    <Dropdown.Item eventKey=\"0\">$1</Dropdown.Item>\r",
-			"    <Dropdown.Item eventKey=\"1\">$2</Dropdown.Item>\r",
-			"    <Dropdown.Item eventKey=\"2\">$3</Dropdown.Item>\r",
-			"</Dropdown>\r",
-			""
+  "Icon": {
+    "prefix": "rsic",
+    "body": ["<Icon icon=\"$1\" />", ""]
+  },
+  "IconButton": {
+    "prefix": "rsicb",
+    "body": ["<IconButton icon={<Icon icon=\"$1\" />} />", ""]
+  },
+  "IconStack": {
+    "prefix": "rsics",
+    "body": [
+      "<IconStack size=\"lg\">",
+      "  <Icon icon=\"$1\" stack=\"1x\" />",
+      "  <Icon icon=\"$2\" stack=\"2x\" />",
+      "</IconStack>",
+      ""
+    ]
+  },
 
-		]
-	},
-	"Tooltip": {
-		"prefix": "rstt",
-		"body": [
-			"<Whisper placement=\"top\" trigger=\"hover\" speaker={\r",
-			"	<Tooltip>\r",
-			"		This is a help <i>tooltip</i> .\r",
-			"	</Tooltip>\r",
-			"}>",
-			"	<Button shape=\"default\" >Click</Button>\r",
-			"</Whisper>\r",
-			""
-		]
-	},
-	"Popover": {
-		"prefix": "rsp",
-		"body": [
-			"<Whisper placement=\"top\" trigger=\"hover\" speaker={\r",
-			"	<Popover>\r",
-			"		This is a help <i>tooltip</i> .\r",
-			"	</Popover>\r",
-			"}>",
-			"	<Button shape=\"default\" >Click</Button>\r",
-			"</Whisper>\r",
-			""
-		]
-	},
-	"Nav": {
-		"prefix": "rsnav",
-		"body": [
-			"<Nav>\r",
-			"	<Nav.Item active>$1</Nav.Item>\r",
-			"	<Nav.Item>$2</Nav.Item>\r",
-			"	<Nav.Item>$3</Nav.Item>\r",
-			"	<Nav.Item disabled>$4</Nav.Item>\r",
-			"</Nav>\r",
-			""
-		]
-	},
-	"NavBar": {
-		"prefix": "rsnavbar",
-		"body": [
-			"<Navbar >\r",
-			"	<Navbar.Header>\r",
-			"		<Navbar.Brand>\r",
-			"			<Anchor href=\"#\">Suite</Anchor>\r",
-			"		</Navbar.Brand>\r",
-			"	</Navbar.Header>\r",
-			"	<Navbar.Collapse>\r",
-			"		<Nav>\r",
-			"			<Nav.Item active>Item A</Nav.Item>\r",
-			"			<Nav.Item>Item B</Nav.Item>\r",
-			"			<Nav.Item>Item C</Nav.Item>\r",
-			"			<Nav.Item disabled>Item D</Nav.Item>\r",
-			"			<Nav.Dropdown eventKey=\"E\" select title=\"Item E\">\r",
-			"				<Nav.Item eventKey=\"E-1\" >Item E-1</Nav.Item>\r",
-			"				<Nav.Item eventKey=\"E-2\" >Item E-2</Nav.Item>\r",
-			"				<Nav.Item eventKey=\"E-3\" >Item E-3</Nav.Item>\r",
-			"				<Nav.Item eventKey=\"E-4\" >Item E-4</Nav.Item>\r",				
-			"			</Nav.Dropdown>\r",
-			"		</Nav>\r",
-			"		<Nav pullRight>\r",
-			"			<Nav.Item eventKey={1} href=\"#\">Link Right</Nav.Item>\r",
-			"			<Nav.Item eventKey={2} href=\"#\">Link Right</Nav.Item>\r",
-			"		</Nav>\r",
-			"	</Navbar.Collapse>\r",
-			"</Navbar>\r",
-			""
-		]
-	},
-	"Breadcrumb": {
-		"prefix": "rsbc",
-		"body": [
-			"<Breadcrumb>\r",
-			"	<Breadcrumb.Item href=\"#\">\r",
-			"		Home\r",
-			"	</Breadcrumb.Item>\r",
-			"	<Breadcrumb.Item href=\"#\">\r",
-			"		Library\r",
-			"	</Breadcrumb.Item>\r",
-			"	<Breadcrumb.Item active>\r",
-			"		Data\r",
-			"	</Breadcrumb.Item>\r",
-			"</Breadcrumb>\r",
-			""
-		]
-	},
-	"Pagination": {
-		"prefix": "rspt",
-		"body": [
-			"<Pagination\r",
-			"	pages={10}\r",
-			"	activePage={1}\r",
-			"	onSelect={$1} />\r",
-			""
-		]
-	},
-	"Modal": {
-		"prefix": "rsm",
-		"body": [
-			"<Modal>\r",
-			"	 <Modal.Header>\r",
-			"		<Modal.Title>Modal Title</Modal.Title>\r",
-			"	</Modal.Header>\r",
-			"	<Modal.Body>$1</Modal.Body>\r",
-			"	<Modal.Footer>\r",
-			"		<Button shape=\"primary\">Confirm</Button>\r",
-			"		<Button shape=\"default\">Cancel</Button>\r",
-			"	</Modal.Footer>\r",
-			"</Modal>\r",
-			""
-		]
-	},
-	"Grid": {
-		"prefix": "rsg",
-		"body": [
-			"<Grid>\r",
-			"	<Row>\r",
-			"		<Col xs={12} md={8}>$1</Col>\r",
-			"		<Col xs={6} md={4}>$2</Col>\r",
-			"	</Row>\r",
-			"<Grid>\r",
-			""
-		]
-	},
-	"Panel": {
-		"prefix": "rspl",
-		"body": [
-			"<Panel header=\"$1\" shape=\"default\">\r",
-			"	$2\r",
-			"</Panel>\r",
-			""
-		]
-	},
-	"Table": {
-		"prefix": "rstable",
-		"body": [
-			"<Table>\r",
-			"	<thead>\r",
-			"		<tr>\r",
-			"			<th>#</th>\r",
-			"			<th>URL</th>\r",
-			"			<th>Title</th>\r",
-			"			<th>PV</th>\r",
-			"		</tr>\r",
-			"	</thead>\r",
-			"	<tbody>\r",
-			"		<tr>\r",
-			"			<td>1</td>\r",
-			"			<td>http://wwww.hypers.com/</td>\r",
-			"			<td>Hypers</td>\r",
-			"			<td>12342</td>\r",
-			"		</tr>\r",
-			"	</tbody>\r",
-			"</Table>\r",
-			""
-		]
-	},
-	"FormGroup": {
-		"prefix": "rsfg",
-		"body": [
-			"<FormGroup>\r",
-			"	<ControlLabel>Text</ControlLabel>\r",
-			"	<FormControl  type=\"text\"  />\r",
-			"	<HelpBlock>Required</HelpBlock>\r",
-			"</FormGroup>\r",
-			""
-		]
-	}
+  "Tooltip": {
+    "prefix": "rstt",
+    "body": [
+      "<Whisper placement=\"top\" trigger=\"hover\" speaker={\r",
+      " <Tooltip>\r",
+      "  This is a help <i>tooltip</i> .\r",
+      " </Tooltip>\r",
+      "}>",
+      " <Button appearance=\"default\" >Click</Button>\r",
+      "</Whisper>\r",
+      ""
+    ]
+  },
+
+  "Popover": {
+    "prefix": "rsp",
+    "body": [
+      "<Whisper placement=\"top\" trigger=\"hover\" speaker={\r",
+      " <Popover>\r",
+      "  This is a help <i>tooltip</i> .\r",
+      " </Popover>\r",
+      "}>",
+      " <Button appearance=\"default\" >Click</Button>\r",
+      "</Whisper>\r",
+      ""
+    ]
+  },
+
+  "AlertInfo": {
+    "prefix": "rsali",
+    "body": ["Alert.info($1)"]
+  },
+  "AlertSuccess": {
+    "prefix": "rsals",
+    "body": ["Alert.success($1)"]
+  },
+  "AlertWarning": {
+    "prefix": "rsalw",
+    "body": ["Alert.warning($1)"]
+  },
+  "AlertError": {
+    "prefix": "rsale",
+    "body": ["Alert.error($1)"]
+  },
+  "AlertClose": {
+    "prefix": "rsalc",
+    "body": ["Alert.close()"]
+  },
+  "AlertCloseAll": {
+    "prefix": "rsalca",
+    "body": ["Alert.closeAll()"]
+  },
+
+  "NotificationInfo": {
+    "prefix": "rsnti",
+    "body": ["Notification.info($1)"]
+  },
+  "NotificationSuccess": {
+    "prefix": "rsnts",
+    "body": ["Notification.success($1)"]
+  },
+  "NotificationWarning": {
+    "prefix": "rsntw",
+    "body": ["Notification.warning($1)"]
+  },
+  "NotificationError": {
+    "prefix": "rsnte",
+    "body": ["Notification.error($1)"]
+  },
+  "NotificationClose": {
+    "prefix": "rsntc",
+    "body": ["Notification.close()"]
+  },
+  "NotificationCloseAll": {
+    "prefix": "rsntca",
+    "body": ["Notification.closeAll()"]
+  },
+
+  "Message": {
+    "prefix": "rsms",
+    "body": [
+      "<Message",
+      "  type=\"$1\"",
+      "  title=\"$2\"",
+      "  description=\"$3\"",
+      "/>",
+      ""
+    ]
+  },
+
+  "Loader": {
+    "prefix": "rsld",
+    "body": ["<Loader content=\"Loading...\" />", ""]
+  },
+
+  "Modal": {
+    "prefix": "rsm",
+    "body": [
+      "<Modal>\r",
+      "  <Modal.Header>\r",
+      "  <Modal.Title>Modal Title</Modal.Title>\r",
+      " </Modal.Header>\r",
+      " <Modal.Body>$1</Modal.Body>\r",
+      " <Modal.Footer>\r",
+      "  <Button appearance=\"primary\">Confirm</Button>\r",
+      "  <Button appearance=\"default\">Cancel</Button>\r",
+      " </Modal.Footer>\r",
+      "</Modal>\r",
+      ""
+    ]
+  },
+
+  "Drawer": {
+    "prefix": "rsdw",
+    "body": [
+      "<Drawer",
+      "  show={$1}",
+      "  onHide={$2}",
+      ">",
+      "  <Drawer.Header>",
+      "    <Drawer.Title>Drawer Title</Drawer.Title>",
+      "  </Drawer.Header>",
+      "  <Drawer.Body>",
+      "    <Paragraph />",
+      "  </Drawer.Body>",
+      "  <Drawer.Footer>",
+      "    <Button onClick={$2} appearance=\"primary\">Confirm</Button>",
+      "    <Button onClick={$2} appearance=\"subtle\">Cancel</Button>",
+      "  </Drawer.Footer>",
+      "</Drawer>",
+      ""
+    ]
+  },
+
+  "Divider": {
+    "prefix": "rsdv",
+    "body": ["<Divider />", ""]
+  },
+
+  "ProgressLine": {
+    "prefix": "rspgl",
+    "body": ["<Progress.Line percent={$1} strokeColor=\"$2\" />", ""]
+  },
+  "ProgressCircle": {
+    "prefix": "rspgc",
+    "body": ["<Progress.Circle percent={$1} strokeColor=\"$2\" />", ""]
+  },
+
+  "PlaceholderParagraph": {
+    "prefix": "rsph",
+    "body": ["<Placeholder.Paragraph rows={$1} graph=\"image\" active />", ""]
+  },
+
+  "Dropdown": {
+    "prefix": "rsdd",
+    "body": [
+      "<Dropdown activeKey=\"2\">\r",
+      "  <Dropdown.Item eventKey=\"0\">$1</Dropdown.Item>\r",
+      "  <Dropdown.Item eventKey=\"1\">$2</Dropdown.Item>\r",
+      "  <Dropdown.Item eventKey=\"2\">$3</Dropdown.Item>\r",
+      "</Dropdown>\r",
+      ""
+    ]
+  },
+
+  "Nav": {
+    "prefix": "rsnav",
+    "body": [
+      "<Nav>",
+      "  <Nav.Item icon={<Icon icon=\"home\" />}>Home</Nav.Item>",
+      "  <Nav.Item>News</Nav.Item>",
+      "  <Nav.Item>Solutions</Nav.Item>",
+      "  <Nav.Item>Products</Nav.Item>",
+      "  <Nav.Item>About</Nav.Item>",
+      "</Nav>",
+      ""
+    ]
+  },
+  "NavBar": {
+    "prefix": "rsnavbar",
+    "body": [
+      "<Navbar>",
+      "  <Navbar.Header>",
+      "    <a href=\"#\" className=\"navbar-brand logo\">RSUITE</a>",
+      "  </Navbar.Header>",
+      "  <Navbar.Body>",
+      "    <Nav>",
+      "      <Nav.Item icon={<Icon icon=\"home\" />} >Home</Nav.Item>",
+      "      <Nav.Item>News</Nav.Item>",
+      "      <Nav.Item>Products</Nav.Item>",
+      "      <Dropdown title=\"About\">",
+      "        <Dropdown.Item>Company</Dropdown.Item>",
+      "        <Dropdown.Item>Team</Dropdown.Item>",
+      "        <Dropdown.Item>Contact</Dropdown.Item>",
+      "      </Dropdown>",
+      "    </Nav>",
+      "    <Nav pullRight>",
+      "      <Nav.Item icon={<Icon icon=\"cog\" />} >Settings</Nav.Item>",
+      "    </Nav>",
+      "  </Navbar.Body>",
+      "</Navbar>",
+      ""
+    ]
+  },
+
+  "Sidenav": {
+    "prefix": "rssn",
+    "body": [
+      "<Sidenav defaultOpenKeys={['3', '4']}>",
+      "  <Sidenav.Body>",
+      "    <Nav>",
+      "      <Nav.Item eventKey=\"1\" icon={<Icon icon=\"dashboard\" />}>",
+      "        Dashboard",
+      "      </Nav.Item>",
+      "      <Nav.Item eventKey=\"2\" icon={<Icon icon=\"group\" />}>",
+      "        User Group",
+      "      </Nav.Item>",
+      "      <Dropdown eventKey=\"3\" title=\"Advanced\" icon={<Icon icon=\"magic\" />}>",
+      "        <Dropdown.Item eventKey=\"3-1\">Geo</Dropdown.Item>",
+      "        <Dropdown.Item eventKey=\"3-2\">Devices</Dropdown.Item>",
+      "        <Dropdown.Item eventKey=\"3-3\">Loyalty</Dropdown.Item>",
+      "        <Dropdown.Item eventKey=\"3-4\">Visit Depth</Dropdown.Item>",
+      "      </Dropdown>",
+      "      <Dropdown",
+      "        eventKey=\"4\"",
+      "        title=\"Settings\"",
+      "        icon={<Icon icon=\"gear-circle\" />}",
+      "      >",
+      "        <Dropdown.Item eventKey=\"4-1\">Applications</Dropdown.Item>",
+      "        <Dropdown.Item eventKey=\"4-2\">Channels</Dropdown.Item>",
+      "        <Dropdown.Item eventKey=\"4-3\">Versions</Dropdown.Item>",
+      "        <Dropdown.Menu eventKey=\"4-5\" title=\"Custom Action\">",
+      "          <Dropdown.Item eventKey=\"4-5-1\">Action Name</Dropdown.Item>",
+      "          <Dropdown.Item eventKey=\"4-5-2\">Action Params</Dropdown.Item>",
+      "        </Dropdown.Menu>",
+      "      </Dropdown>",
+      "    </Nav>",
+      "  </Sidenav.Body>",
+      "</Sidenav>",
+      ""
+    ]
+  },
+
+  "Steps": {
+    "prefix": "rsst",
+    "body": [
+      "<Steps current={$1}>",
+      "  <Steps.Item title=\"$1\" />",
+      "  <Steps.Item title=\"$2\" />",
+      "  <Steps.Item title=\"$3\" />",
+      "  <Steps.Item title=\"$4\" />",
+      "</Steps>",
+      ""
+    ]
+  },
+
+  "Pagination": {
+    "prefix": "rspage",
+    "body": [
+      "<Pagination\r",
+      " pages={10}\r",
+      " activePage={1}\r",
+      " onSelect={$1} />\r",
+      ""
+    ]
+  },
+
+  "Breadcrumb": {
+    "prefix": "rsbc",
+    "body": [
+      "<Breadcrumb>",
+      "  <Breadcrumb.Item>Home</Breadcrumb.Item>",
+      "  <Breadcrumb.Item>Components</Breadcrumb.Item>",
+      "  <Breadcrumb.Item active>Breadcrumb</Breadcrumb.Item>",
+      "</Breadcrumb>",
+      ""
+    ]
+  },
+
+  "Grid": {
+    "prefix": "rsg",
+    "body": [
+      "<Grid fluid>\r",
+      " <Row>\r",
+      "  <Col xs={12}>$1</Col>\r",
+      "  <Col xs={6}>$2</Col>\r",
+      " </Row>\r",
+      "<Grid>\r",
+      ""
+    ]
+  },
+
+  "FlexboxGrid": {
+    "prefix": "rsf",
+    "body": [
+      "<FlexboxGrid>",
+      "  <FlexboxGrid.Item colspan={6}>$1</FlexboxGrid.Item>",
+      "  <FlexboxGrid.Item colspan={6}>$2</FlexboxGrid.Item>",
+      "  <FlexboxGrid.Item colspan={6}>$3</FlexboxGrid.Item>",
+      "  <FlexboxGrid.Item colspan={6}>$4</FlexboxGrid.Item>",
+      "</FlexboxGrid>",
+      ""
+    ]
+  },
+
+  "FormGroup": {
+    "prefix": "rsfg",
+    "body": [
+      "<FormGroup>\r",
+      " <ControlLabel>Text</ControlLabel>\r",
+      " <FormControl  type=\"text\"  />\r",
+      " <HelpBlock>Required</HelpBlock>\r",
+      "</FormGroup>\r",
+      ""
+    ]
+  },
+
+  "CheckboxGroup": {
+    "prefix": "rscg",
+    "body": [
+      "<CheckboxGroup name=\"checkboxList\" >",
+      "  <p>Group1</p>",
+      "  <Checkbox>Item A</Checkbox>",
+      "  <Checkbox>Item B</Checkbox>",
+      "  <p>Group2</p>",
+      "  <Checkbox>Item C</Checkbox>",
+      "  <Checkbox disabled>Item D</Checkbox>",
+      "</CheckboxGroup>",
+      ""
+    ]
+  },
+
+  "RadioGroup": {
+    "prefix": "rsrg",
+    "body": [
+      "<RadioGroup name=\"radioList\">",
+      "  <p>Group1</p>",
+      "  <Radio value=\"A\">Item A</Radio>",
+      "  <Radio value=\"B\">Item B</Radio>",
+      "  <p>Group2</p>",
+      "  <Radio value=\"C\">Item C</Radio>",
+      "  <Radio value=\"D\" disabled>Item D</Radio>",
+      "</RadioGroup>",
+      ""
+    ]
+  },
+
+  "Input": {
+    "prefix": "rsi",
+    "body": ["<Input placeholder=\"Default Input\" />", ""]
+  },
+
+  "InputNumber": {
+    "prefix": "rsin",
+    "body": ["<InputNumber />", ""]
+  },
+
+  "AutoComplete": {
+    "prefix": "rsac",
+    "body": ["<AutoComplete data={$1} />", ""]
+  },
+
+  "Toggle": {
+    "prefix": "rsto",
+    "body": ["<Toggle checked={$1} />", ""]
+  },
+
+  "InputPicker": {
+    "prefix": "rsip",
+    "body": [
+      "<InputPicker",
+      "  data={$1}",
+      "  labelKey=\"$2\"",
+      "  valueKey=\"$3\"",
+      "  onChange={$4}",
+      "/>",
+      ""
+    ]
+  },
+
+  "TagPicker": {
+    "prefix": "rstp",
+    "body": [
+      "<TagPicker",
+      "  data={$1}",
+      "  labelKey=\"$2\"",
+      "  valueKey=\"$3\"",
+      "  onChange={$4}",
+      "/>",
+      ""
+    ]
+  },
+
+  "SelectPicker": {
+    "prefix": "rssp",
+    "body": [
+      "<SelectPicker",
+      "  data={$1}",
+      "  labelKey=\"$2\"",
+      "  valueKey=\"$3\"",
+      "  onChange={$4}",
+      "/>",
+      ""
+    ]
+  },
+
+  "CheckPicker": {
+    "prefix": "rscp",
+    "body": [
+      "<CheckPicker",
+      "  data={$1}",
+      "  labelKey=\"$2\"",
+      "  valueKey=\"$3\"",
+      "  onChange={$4}",
+      "/>",
+      ""
+    ]
+  },
+
+  "TreePicker": {
+    "prefix": "rstp",
+    "body": [
+      "<TreePicker",
+      "  data={$1}",
+      "  labelKey=\"$2\"",
+      "  valueKey=\"$3\"",
+      "  childrenKey=\"$4\"",
+      "  onChange={$5}",
+      "/>",
+      ""
+    ]
+  },
+
+  "CheckTreePicker": {
+    "prefix": "rsctp",
+    "body": [
+      "<CheckTreePicker",
+      "  data={$1}",
+      "  labelKey=\"$2\"",
+      "  valueKey=\"$3\"",
+      "  childrenKey=\"$4\"",
+      "  onChange={$5}",
+      "/>",
+      ""
+    ]
+  },
+
+  "Cascader": {
+    "prefix": "rsca",
+    "body": [
+      "<Cascader",
+      "  data={$1}",
+      "  labelKey=\"$2\"",
+      "  valueKey=\"$3\"",
+      "  childrenKey=\"$4\"",
+      "  onChange={$5}",
+      "/>",
+      ""
+    ]
+  },
+
+  "MultiCascader": {
+    "prefix": "rsmca",
+    "body": [
+      "<MultiCascader",
+      "  data={$1}",
+      "  labelKey=\"$2\"",
+      "  valueKey=\"$3\"",
+      "  childrenKey=\"$4\"",
+      "  onChange={$5}",
+      "/>",
+      ""
+    ]
+  },
+
+  "DatePicker": {
+    "prefix": "rsdp",
+    "body": ["<DatePicker onChange={$1} />", ""]
+  },
+
+  "DateRangePicker": {
+    "prefix": "rsdrp",
+    "body": ["<DateRangePicker onChange={$1} />", ""]
+  },
+
+  "Slider": {
+    "prefix": "rssl",
+    "body": [
+      "<Slider",
+      "  progress",
+      "  defaultValue={$1}",
+      "  onChange={$2}",
+      "/>",
+      ""
+    ]
+  },
+
+  "Uploader": {
+    "prefix": "rsup",
+    "body": ["<Uploader", "  action=\"$1\"", "/>", ""]
+  },
+
+  "Rate": {
+    "prefix": "rsrt",
+    "body": ["<Rate defaultValue={$1} />", ""]
+  },
+
+  "Avatar": {
+    "prefix": "rsav",
+    "body": ["<Avatar>$1</Avatar>", ""]
+  },
+
+  "Badge": {
+    "prefix": "rsbb",
+    "body": ["<Badge content={$1}>", "  <Button>$2</Button>", "</Badge>", ""]
+  },
+
+  "Table": {
+    "prefix": "rstable",
+    "body": [
+      "<Table",
+      "  height={400}",
+      "  data={$1}",
+      ">",
+      "  <Column width={70} align=\"center\" fixed>",
+      "    <HeaderCell>Id</HeaderCell>",
+      "    <Cell dataKey=\"id\" />",
+      "  </Column>",
+      "",
+      "  <Column width={200} fixed>",
+      "    <HeaderCell>First Name</HeaderCell>",
+      "    <Cell dataKey=\"firstName\" />",
+      "  </Column>",
+      "",
+      "  <Column width={200}>",
+      "    <HeaderCell>Last Name</HeaderCell>",
+      "    <Cell dataKey=\"lastName\" />",
+      "  </Column>",
+      "",
+      "  <Column width={200}>",
+      "    <HeaderCell>City</HeaderCell>",
+      "    <Cell dataKey=\"city\" />",
+      "  </Column>",
+      "",
+      "  <Column width={200}>",
+      "    <HeaderCell>Street</HeaderCell>",
+      "    <Cell dataKey=\"street\" />",
+      "  </Column>",
+      "",
+      "  <Column width={300}>",
+      "    <HeaderCell>Company Name</HeaderCell>",
+      "    <Cell dataKey=\"companyName\" />",
+      "  </Column>",
+      "",
+      "  <Column width={300}>",
+      "    <HeaderCell>Email</HeaderCell>",
+      "    <Cell dataKey=\"email\" />",
+      "  </Column>",
+      "",
+      "</Table>",
+      ""
+    ]
+  },
+
+  "Tree": {
+    "prefix": "rstree",
+    "body": [
+      "<Tree",
+      "  data={$1}",
+      "  labelKey=\"$2\"",
+      "  valueKey=\"$3\"",
+      "  childrenKey=\"$4\"",
+      "  onChange={$5}",
+      "/>",
+      ""
+    ]
+  },
+
+  "CheckTree": {
+    "prefix": "rsct",
+    "body": [
+      "<CheckTree",
+      "  data={$1}",
+      "  labelKey=\"$2\"",
+      "  valueKey=\"$3\"",
+      "  childrenKey=\"$4\"",
+      "  onChange={$5}",
+      "/>",
+      ""
+    ]
+  },
+
+  "Panel": {
+    "prefix": "rspl",
+    "body": ["<Panel header=\"$1\">\r", " $2\r", "</Panel>\r", ""]
+  },
+
+  "Timeline": {
+    "prefix": "rstl",
+    "body": [
+      "<Timeline align=\"left\">",
+      "  <Timeline.Item>$1</Timeline.Item>",
+      "  <Timeline.Item>$2</Timeline.Item>",
+      "  <Timeline.Item>$3</Timeline.Item>",
+      "  <Timeline.Item>$4</Timeline.Item>",
+      "  <Timeline.Item>$5</Timeline.Item>",
+      "</Timeline>",
+      ""
+    ]
+  },
+
+  "TagGroup": {
+    "prefix": "rstg",
+    "body": [
+      "<TagGroup>",
+      "  <Tag color=\"red\">Red</Tag>",
+      "  <Tag color=\"orange\">Orange</Tag>",
+      "  <Tag color=\"yellow\">Yellow</Tag>",
+      "  <Tag color=\"green\">Green</Tag>",
+      "  <Tag color=\"cyan\">Cyan</Tag>",
+      "  <Tag color=\"blue\">Blue</Tag>",
+      "  <Tag color=\"violet\">Violet</Tag>",
+      "</TagGroup>",
+      ""
+    ]
+  },
+
+  "List": {
+    "prefix": "rsls",
+    "body": [
+      "<List>",
+      "  {data.map((item, index) => (",
+      "    <List.Item key={index} index={index}>",
+      "      {item}",
+      "    </List.Item>",
+      "  ))}",
+      "</List>",
+      ""
+    ]
+  },
+
+  "Calendar": {
+    "prefix": "rscld",
+    "body": ["<Calendar bordered />"]
+  },
+
+  "Carousel": {
+    "prefix": "rscr",
+    "body": [
+      "<Carousel autoplay>",
+      "  <img",
+      "    src=\"$1\"",
+      "    height=\"$2\"",
+      "  />",
+      "</Carousel>",
+      ""
+    ]
+  },
+
+  "Affix": {
+    "prefix": "rsaf",
+    "body": [
+      "<Affix>",
+      "  <Button appearance=\"primary\">Top 0</Button>",
+      "</Affix>",
+      ""
+    ]
+  },
+
+  "Animation.Fade": {
+    "prefix": "rsanf",
+    "body": [
+      "<Animation.Fade>",
+      "  {(props, ref) => <Panel {...props} ref={ref} />}",
+      "</Animation.Fade>",
+      ""
+    ]
+  },
+
+  "Animation.Collapse": {
+    "prefix": "rsanc",
+    "body": [
+      "<Animation.Collapse>",
+      "  {(props, ref) => <Panel {...props} ref={ref} />}",
+      "</Animation.Collapse>",
+      ""
+    ]
+  },
+
+  "Animation.Bounce": {
+    "prefix": "rsanb",
+    "body": [
+      "<Animation.Bounce>",
+      "  {(props, ref) => <Panel {...props} ref={ref} />}",
+      "</Animation.Bounce>",
+      ""
+    ]
+  },
+
+  "Animation.Slide": {
+    "prefix": "rsans",
+    "body": [
+      "<Animation.Slide>",
+      "  {(props, ref) => <Panel {...props} ref={ref} />}",
+      "</Animation.Slide>",
+      ""
+    ]
+  },
+
+  "Animation.Transition": {
+    "prefix": "rsant",
+    "body": [
+      "<Animation.Transition>",
+      "  {(props, ref) => <Panel {...props} ref={ref} />}",
+      "</Animation.Transition>",
+      ""
+    ]
+  },
+
+  "Portal": {
+    "prefix": "rspt",
+    "body": ["<Portal>", "  $1", "</Portal>", ""]
+  }
 }
-
-
-
-
-
-
-
-
-
